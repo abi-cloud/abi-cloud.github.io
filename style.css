@@ -1,0 +1,113 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    font-size: 1.2vw;
+}
+
+/* {} represents all the different properties applying to a certain selected element. Every font will take up 2% of the screen (2vw example in font-size). */
+
+#logo {
+    color:white;
+    margin: 0px;
+    padding: 8px;
+    font-family: "Fredoka One", sans-serif;
+    /* box-shadow: 8px 8px 10px 3px darkorange; */
+    width: 14%;
+    text-shadow: 
+    1px 1px 0px black,   /*Bottom right shadow */
+    -1px 1px 0px black,  /*Bottom left shadow */
+    1px -1px 0px black,  /*Top right shadow */
+    -1px -1px 0px black; /*Top left shadow */
+    text-align: center;
+}
+
+/* Bright title has eight pixel padding around it, space inside the element not around it! Need to add "" if there are two words for a font name. */
+
+ul {
+    margin: 0px;
+}
+
+body > header {
+    display: flex;
+    background-color: orange;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* can use #main-header instead of body and header to target the h1 and the nav tag inside because the first header has the id called main-header*/
+
+/* Hexadecimals means there are 16 values for each value, using 2x 16 values 00 01 02 */
+
+#nav-ul {
+display: flex;
+}
+ 
+#nav-ul > li {
+    padding: 8px;
+    margin: 16px;
+    }
+
+body > header > nav > ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 20%;
+}
+
+/* can do class function and add class "" next to the anchor tags to save writing specific body>header>nav>ul>li>a. */
+
+body > main article {
+    width: 80%;
+    margin: auto;
+}
+
+/* doing the > suggests direct descendor selector and not doing it e.g., main ... article is just descendor selector and ignores the elements written inbetween but still targets articles under the main element  */
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+}
+/* in order to justify content and give it space you need to have space first so in the next line give the div, the article and aside a 70% width for example so that there is a purple box of free space that can be worked with to justify content and move around the articles and the aside */
+
+#main-content > div {
+    width: 80%;
+}
+
+img {
+    border-radius: 20%;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+/* Forms are block type in default. center will center the inline elements of the block. */
+
+body > footer {
+    display: flex;
+    background-color: orange;
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > li {
+    margin-left: 12px;
+}
+
+#footer-ul > div > li > a {
+    color: white;
+    text-decoration: none;
+}
